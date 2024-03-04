@@ -1,0 +1,475 @@
+:root{
+  --white: #FBFBFB;
+  --green: #013220;
+  --main: #6f7d7b;
+  --grey: #a7afae;
+  --test: #bec7c4;
+  --test2: #;
+  
+}
+
+*{
+  font-family: "Barlow", sans-serif;
+}
+
+:target:before {
+  content: "";
+  display: block;
+  height: 80px;
+  margin-top: -80px;
+  visibility: hidden;
+
+}
+
+#header:target {
+  scroll-margin-top: 500px;
+}
+
+.navbar-flex{
+  /* width: 100vw; */
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  padding-left: 8.33%;
+  padding-right: 8.33%;
+  background-color: #002400;
+  flex-wrap: wrap;
+  position: fixed;
+  z-index: 100;
+}
+
+.link-container {
+  display: flex;
+  justify-content: space-between;
+  width: 657px;
+  flex-wrap: nowrap;
+}
+
+a{
+  text-decoration: none;
+
+}
+
+a:hover{
+  color: rgb(255, 255, 255);
+  /* border-bottom: #FBFBFB solid 1px; */
+  text-decoration: underline;
+  /* font-size: 20px; */
+  cursor: pointer;
+
+}
+
+strong{
+
+  font-weight: 900;
+  color: var(--white);
+  font-size: 40px;
+  padding-right: 20px;
+
+
+}
+
+.link-style{
+  font-weight: 700;
+  font-size: 22px;
+  color: var(--white);
+}
+
+.container1{
+  padding-left: 8.33%;
+  padding-right: 8.33%;
+  padding-top: 80px;
+
+  /* height: 100vh;  impostato dopo con una media  */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--green);
+}
+
+span{
+  display: block;
+}
+
+.hero-info{
+  font-size: 108px;
+  font-weight: 900;
+  color: var(--white);
+  line-height: 120px;
+  /* padding-top: 80px; */
+}
+
+.hero-info
+span:nth-child(4){
+  font-size: 60px;
+  font-weight: bold;
+  line-height: 90px;
+  padding-bottom: 10px;
+}
+
+.hero-info
+span:first-child{
+  /* margin-top: 250px; */
+  /* margin-top: 12vh; */
+  font-size: 80px;
+  font-weight: bold;
+  line-height: 90px;
+}
+
+.profile-pic{
+  /* width: 655px; */
+  /* width: 41em; */
+  height: 75vh;
+}
+
+.social-link{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 250px;   /*impostare la grandezza del container dei link  */
+
+}
+
+.social-link li{
+  flex: 1;
+  margin: 0 10px;
+}
+
+.social-link li:first-child{
+  margin: 0 10px 0 0;
+}
+
+.social-link img{
+  width: 34px;
+  filter: invert(1); /* Inverte il colore degli SVG */
+}
+
+.main-container{
+  background-color: var(--main);
+  /* width: 100vw; */
+  padding-left: 8.33%;
+  padding-right: 8.33%;
+  /* padding-top: 80px; questo crea problemi */
+  padding-bottom: 80px;
+}
+
+#about-me{
+  padding-top: 80px;
+}
+
+.p-container{
+  background-color: var(--grey);
+  border-radius: 20px;
+  padding: 20px;
+}
+
+h1{
+  text-align: center;
+  font-size: 47px;
+  font-weight: bold;
+  color: black;
+}
+
+p{
+  font-size: 32px;
+  font-weight: 400;
+  color: black;
+}
+
+h1 p{
+  line-height: 20px;
+}
+
+#skills{
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 500px;
+  padding-bottom: 100px;
+  border-bottom: 1px solid black;
+
+}
+
+.program-skills{
+  display: flex;
+  justify-content: space-between;
+  width: 520px;
+  height: 116px;
+  margin: auto;
+
+}
+
+.program-skills img{
+  height: 115px;
+  /* padding: 10px; */
+}
+
+.soft-skills{
+  display: flex;
+  justify-content: space-between;
+  font-size: 30px;
+  color: black;
+  text-decoration: underline;
+  font-weight: 400;
+  flex-wrap: wrap;
+}
+
+#portfolio{
+  padding-top: 80px;
+  padding-bottom: 80px;
+  border-bottom: 1px solid black;
+}
+
+.portfolio-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.portfolio-left{
+  font-size: 150px;;
+  flex: 1;
+  text-align: center;
+}
+
+.portfolio-right{
+  flex: 1;
+  text-align: center;
+}
+
+.number{
+  font-size: 150px;
+  font-weight: bold;
+  color: black;
+}
+
+.screen img{
+  width: 300px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+#contact{
+  padding-top: 80px;
+  padding-bottom: 80px;
+  color: black;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid black;
+}
+
+.form-container{
+  background-color: var(--grey);
+  border-radius: 20px;
+  padding: 20px;
+}
+
+form input{
+  width: 100%;
+}
+
+.form label{
+  font-size: 35px;
+}
+
+.send-button{
+  width: 30%;
+  display: block;
+  margin: auto;
+}
+/* 
+regole della sezione cv passate nel css del cv
+
+
+#cv{
+  padding-top: 80px;
+  padding-bottom: 80px;
+  border-bottom: 1px solid black;
+  color: black;
+}
+  
+.cv-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.work-info{
+  background-color: var(--grey);
+  border-radius: 20px;
+  padding: 20px;
+  flex: 1;
+  margin: 10px;
+}
+
+.instruction{
+  background-color: var(--grey);
+  border-radius: 20px;
+  padding: 20px;
+  flex: 1;
+  margin: 10px;
+
+}
+
+h2{
+  margin-top: 20px;
+} */
+
+
+@media only screen and (min-width: 1126px){
+  .container1{
+    /* padding-left: 8.33%;
+    padding-right: 8.33%;
+    padding-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--green); */
+    height: 100vh;
+    /* width: 100vw; */
+    /* margin-right: 0 !important; */
+  }
+}
+
+
+@media only screen and (max-width: 1125px){
+  .container1{
+    padding-left: 8.33%;
+    padding-right: 8.33%;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    /* height: 160vh; */
+
+    /* display: flex;
+    justify-content: space-between;
+    background-color: var(--green);
+    flex-wrap: wrap;
+    text-align: center; */
+
+    display: block;
+    margin: auto;
+    text-align: center;
+  }
+
+  .hero-img{
+    padding-top: 30px;
+    display: block;
+    margin: auto;
+    /* position: relative; */
+  }
+
+  .hero-info{
+    padding-top: 80px;
+    margin: auto;
+  }
+
+  .hero-info span:nth-child(2){
+    font-size: 80px;
+  }
+
+  .hero-info span:nth-child(3){
+    font-size: 80px;
+  }
+
+  .social-link{
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width: 899px){
+  .navbar-flex{
+    display: block;
+    margin: auto;
+    text-align: center;
+    position: fixed;
+
+  }
+
+  strong{
+    padding: 0;
+  }
+
+  .link-container{
+  width: auto;
+  }
+
+  .profile-pic{
+    width: 50vw;
+    height: auto;
+  }
+
+  p{
+    font-size: 20px;
+  }
+
+  .portfolio-container{
+    flex-wrap: wrap-reverse;
+  }
+
+  #skills{
+    display: block;
+    text-align: center;
+    height: auto;
+  }
+
+  .program-skills{
+    flex-wrap: wrap;
+    width: auto;
+    height: auto;
+  }
+
+  .program-skills img{
+    padding: 10px;
+  }
+
+  .soft-skills{
+    padding-top: 50px;
+    display: block;
+  }
+}
+
+@media only screen and (max-width:450px){
+  strong{
+    font-size: 25px;
+  }
+
+  .link-container{
+    display: block;
+  }
+
+  .block1{
+    display: inline-block;
+  }
+
+  .link-container span{
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+
+  .hero-info {
+    padding-top: 50px;
+  }
+
+  .hero-info span:nth-child(3){
+    font-size: 60px;
+  }
+
+  .hero-info span:nth-child(2){
+    font-size: 70px;
+  }
+
+  .hero-info span:nth-child(1){
+    font-size: 50px;
+  }
+
+  .link-container{
+    flex-wrap: wrap;
+
+  }
+}
+
+/* regge tutto fino a 330 px, sotto non funziona più */
