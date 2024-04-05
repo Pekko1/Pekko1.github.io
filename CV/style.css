@@ -1,15 +1,15 @@
 #cv{
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding: 80px 20px;
     border-bottom: 1px solid black;
     color: black;
+    
 }
 
 .cv-container{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-bottom: 0px;
+    gap: 20px;
     
 }
 
@@ -19,24 +19,18 @@
     border-radius: 20px;
     padding: 20px;
     flex: 1;
-    margin: 10px;
     border: 1px solid rgba(0, 0, 0, 0.566);
 }
 
-/* .instruction{
-    background-color: var(--test);
-    border-radius: 20px;
-    padding: 20px;
-    flex: 1;
-    margin: 10px;
-} */
-  
 h2{
     margin-top: 20px;
 }
 
 .special{
     margin-top: 3vh;
+    padding-top: 100px;
+    padding-bottom: 50px; ;
+    text-align: center;
 }
 
 .line-break{
@@ -53,7 +47,7 @@ h2{
 }
 
 .p-container{
-    margin: 10px;
+    margin-top: 20px;
     background-color: var(--test);
     border: 1px solid rgba(0, 0, 0, 0.566);
 }
@@ -61,14 +55,3 @@ h2{
 .second{
     margin-top: 20px;
 }
-
-
-
-/* @media only screen and (min-width:1921px) {
-
-    .cv-container{
-    display: block;
-    
-    }
-} */
-
